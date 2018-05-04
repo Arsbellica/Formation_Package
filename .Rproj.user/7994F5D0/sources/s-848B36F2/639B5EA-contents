@@ -60,10 +60,11 @@ return(2 * number)
 
   #Construction du fichier
 #-> Cliquer sur l'onglet Buid (si l'onglet n'apparait pas installer le package roxygen2)
-#-< Cliquer sur More-> Buil source package
+#-> Cliquer sur More-> Buil source package
 #-> Cliquer sur Install and Restart
 #-> Tester que la fonction a bien été créé
 ?multiple
 #-> Cliquer sur Check pour vérifier qu'il n'y a pas de bug dans le package
+
 
 
