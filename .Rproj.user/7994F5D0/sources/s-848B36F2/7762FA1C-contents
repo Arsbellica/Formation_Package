@@ -1,0 +1,9 @@
+Package: multiple
+Title: Multiple (one line, title case)
+Version: 0.0.0.9000
+Authors@R: person("Anais", "Chanson", email = "anais.chanson11@gmail.com", role = c("aut", "cre"))
+Description: Create multiples (one paragraph).
+Depends: R (>= 3.5.0)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true

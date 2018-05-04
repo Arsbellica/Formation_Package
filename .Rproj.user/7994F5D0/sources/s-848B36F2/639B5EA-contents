@@ -1,0 +1,64 @@
+#Création d'un package####
+
+  #Outils et généralités
+#-> devtools et roxygen2 simplifient le travail
+#-> A quoi va servir le package ? Consolidation de sa recherche : le package rassemble et organise des méthodes. Exemples : entropart, ade4.
+#   Outil d’intérêt général. Exemples : EcoFoG, vegan, spatstat, ggplot2.
+#-> Un package ne doit traiter qu’un sujet. Si nécessaire, écrire plusieurs packages.
+
+  #Création
+#-> Package multiple : des fonctions : Double(x), Triple(x) et Multiple(x,
+#                                                 n). . . pour calculer des multiples.
+#                      des fonctions comme FuzzyDouble(x) pour calculer des multiples avec un bruit.
+#                      une représentation graphique du multiple en fonction de x (une droite).
+devtools::create(path = "multiple")
+#-> Le package est créé dans le dossier indiqué. Le dossier final a le nom du package.
+#-> Remettre tous les fichiers du dossier multiple dans le projet dans lequel on travaille (ici Formation_Package)
+#-> Supprimer le dossier multiple vide
+#-> Ouvrir le projet du package. Etudier les fichiers créés.
+
+  #ROxygen
+#-> Créer un fichier en l'appelant Projet et l'enregistrer dans le répertoir R
+#' multiple
+#'
+#' Exercise package
+#'
+#' @name multiple
+#' @docType package
+NULL
+
+  #Créer une fonction
+#-> Créer un fichier en l'appelant Double et l'enregistrer dans le répertoir R
+Double <- function(number) {
+  return(2 * number)
+}
+#-> Exécuter le code dans R pour charger la fonction en mémoire
+Double(5)
+#-> Tester la fonction dans R
+
+  #Documenter la fonction créée
+#-> Dans le fichier Double cliquer sur l'onglet baguette magique -> cliquer sur importer squelette ROxygen
+#-> Remplir le squelette :
+#' Double
+#'
+#' Compute the Double value of a vector
+#'
+#' The Double is calculated by multiplying each value by 2.
+#'
+#' @param number A numeric vector
+#' @param number Si on veut ajouter un 2e vector etc, sinon on supprime cette ligne
+#'
+#' @return A vector containing the Double values.
+#' @export
+#'
+#' @examples
+#' Double(runif(3))
+Double <- function(number) {
+return(2 * number)
+}
+#-> Double() est exportée
+
+  #Construction du fichier
+#-> Cliquer sur l'onglet Buid (si l'onglet n'apparait pas installer le package roxygen2)
+#-< Cliquer sur More-> Buil source package
+#-> Cliquer sur Install and Restart
