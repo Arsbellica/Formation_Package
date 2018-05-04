@@ -1,0 +1,10 @@
+Package: multiple
+Title: Compute multiples
+Version: 0.1-0
+Authors@R: person("Anais", "Chanson", email = "first.last@example.com", role = c("aut", "cre"))
+Description: Efficiently calculate multiples of numbers
+Depends: R (>= 3.5.0), graphics, ggplot2
+Imports: stats
+License: GNU General Public License
+Encoding: UTF-8
+LazyData: true

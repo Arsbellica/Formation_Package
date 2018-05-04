@@ -1,9 +1,11 @@
 Package: multiple
-Title: Multiple (one line, title case)
+Title: Compute multiples
 Version: 0.0.0.9000
 Authors@R: person("Anais", "Chanson", email = "anais.chanson11@gmail.com", role = c("aut", "cre"))
-Description: Create multiples (one paragraph).
-Depends: R (>= 3.5.0)
-License: What license is it under?
+Description: Efficiently calculate multiples of numbers, following Me et al. (2018).
+Depends: R (>= 3.5.0), graphics, ggplot2
+Imports: stats
+License: GNU General Public License
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
